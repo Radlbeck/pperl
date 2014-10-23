@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+# get global ip
+my $global_ip = `curl -s http://ifconfig.me`;
+
+# get local ip
+my $local_ip = `ip addr show`;
+
+# print ips
+print "Global: $global_ip";
+print "Local:  $local_ip";
