@@ -4,7 +4,7 @@
 my $global_ip = `curl -s http://ifconfig.me`;
 
 # get local ip
-my $local_ip = `ip addr show`;
+my $local_ip = `ip -4 a show wlp2s0`;
 
 # print ips
 print "Global: $global_ip";
